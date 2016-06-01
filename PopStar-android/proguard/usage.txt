@@ -1,0 +1,246 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.marsor.common.activities.AbstractBaseActivity:
+    public static final int C_Features_Sort_By_ContentViewOrder
+    public static final int C_Features_Sort_By_OriginAddOrder
+    public static final java.lang.String C_ACTION_EXIT_APP
+    private static final java.lang.String C_String_StartUp_Statistic_Key
+    430:438:public com.marsor.common.feature.Feature getFeature(int)
+    446:452:public int getRandomAnimation()
+    460:494:public java.lang.Integer[] getAnimations()
+    531:532:protected void setFeaturesSortType(int)
+    570:573:public void sendActivityMessage(android.os.Message)
+    580:583:public void sendActivityMessageDelay(android.os.Message,int)
+    613:641:public java.lang.String getResourceName(int)
+com.marsor.common.activities.FlashBaseActivity:
+    38:38:protected int[] assignFeatures()
+com.marsor.common.activities.InstructionActivity:
+    67:67:protected int[] assignFeatures()
+com.marsor.common.components.CustomDialog:
+    124:124:private boolean checkParams()
+    132:197:public void initialize()
+    204:212:public void setWindowAnimation(int)
+    218:228:public void show()
+    232:263:private void setupLocation()
+    266:275:private final void setupSize()
+    283:286:public final void setLayoutId(java.lang.String)
+    292:299:public final void setLayoutId(int)
+    305:312:public final void setLayoutContainer(android.view.ViewGroup)
+    318:320:public final void setSize(android.graphics.Point)
+    327:329:public final void setLocation(android.graphics.Point)
+    332:333:public final void setOnCancelListener(android.content.DialogInterface$OnCancelListener)
+    344:348:public final android.app.Dialog getDialog()
+    351:354:public final android.view.ViewGroup getDialogContainer()
+    357:357:public final android.content.Context getContext()
+    361:362:public final void setMaskalpha(float)
+    365:366:public final void setCustomWindowStyleId(java.lang.String)
+    369:370:public final void setCustomWindowStyle(boolean)
+    373:374:public void setDisableBackKey(boolean)
+    377:378:public void setCancelOnTouchOutside(boolean)
+    43:43:static synthetic boolean access$000(com.marsor.common.components.CustomDialog)
+com.marsor.common.components.CustomDialog$1
+com.marsor.common.components.SentenceLayout:
+    public static final int Align_Type_Both_Left
+    public static final int Align_Type_Both_Right
+    public static final int Align_Type_Right_Left
+    public static final int Align_Type_Left_Right
+    public static final int Align_Type_Center_Left
+    56:60:public SentenceLayout(android.content.Context,java.lang.CharSequence,java.lang.CharSequence)
+    142:143:public void setSeparatorWidth(int)
+    148:148:public int getSeparatorWidth()
+    188:188:public int getAlignType()
+    207:211:public void setRoleName(int)
+    214:218:public void setContent(int)
+com.marsor.common.components.TabButton:
+    29:31:public TabButton(java.lang.String)
+    75:75:public java.lang.String getButtonName()
+    82:83:public void setButtonName(java.lang.String)
+    89:89:public java.lang.String getButtonCaption()
+    96:97:public void setButtonCaption(java.lang.String)
+    110:111:public void setNextPage(java.lang.Class)
+    124:125:public void setClickListener(android.view.View$OnClickListener)
+    138:139:public void setTotalJumpSwitch(boolean)
+    152:153:public void setCloseAfterJump(boolean)
+    166:167:public void setBundleData(android.os.Bundle)
+com.marsor.common.context.AppContext:
+    private static final java.lang.String Mc_String_DataPath
+    private static final java.lang.String Mc_String_TempPath
+    31:31:public AppContext()
+    89:114:public static varargs java.lang.String getAppDataPath(boolean[])
+    126:152:public static varargs java.lang.String getAppTmpPath(boolean[])
+    161:174:public static java.lang.String getAppSdPath()
+    188:188:public static boolean isAdsEnabled()
+    195:196:public static void setAdsEnabled(boolean)
+    223:234:public static java.lang.String getAppVersionName()
+    241:250:public static int getAppVersionCode()
+com.marsor.common.context.Constants:
+    14:87:public Constants()
+com.marsor.common.context.Constants$CommonColor
+com.marsor.common.context.Constants$CommonSize
+com.marsor.common.context.Constants$CommonString
+com.marsor.common.context.Constants$NetWork:
+    105:108:public java.lang.String getCaption()
+    112:115:public int getValue()
+com.marsor.common.feature.AdvertiseFeature:
+    private static final java.lang.String Mc_Str_Adv_Layout_Id
+    private static final java.lang.String Mc_Str_Top_AdContainer_Id
+    private static final java.lang.String Mc_Str_Bottom_AdContainer_Id
+    private static final java.lang.String Mc_Str_Content_Container_Id
+    121:135:public void setupAds(int,boolean)
+com.marsor.common.feature.CommonTabFeature:
+    private static final java.lang.String C_Feature_Layout_Id
+    private static final java.lang.String C_InnerContainer_Id
+    private static final java.lang.String C_TabViewContainer
+    private static final java.lang.String C_TabButtonContainer
+    110:111:public void setTabInitializer(com.marsor.common.feature.CommonTabFeature$TabFeatureInitializer)
+    176:187:public void addTabButton(com.marsor.common.components.TabButton)
+    195:202:public android.widget.Button getTabButton(int)
+    211:224:public android.widget.Button getTabButton(java.lang.Class)
+    233:247:public android.widget.Button getTabButton(java.lang.String)
+    256:263:public android.widget.Button getTabButton(com.marsor.common.components.TabButton)
+    282:283:public void setActiveButton(int)
+    290:291:public void setActiveButton(java.lang.String)
+    297:298:public void setActiveButton(com.marsor.common.components.TabButton)
+    308:359:public varargs void initialTabView(java.lang.Object,android.os.Bundle[])
+com.marsor.common.feature.CommonTabFeature$TabFeatureInitializer:
+    492:492:public CommonTabFeature$TabFeatureInitializer()
+com.marsor.common.feature.CommonTitleFeature:
+    public static final int C_Component_Type_TitleContainer
+    public static final int C_Component_Type_Title
+    public static final int C_Component_Type_LeftButtonContainer
+    public static final int C_Component_Type_LeftButton
+    public static final int C_Component_Type_RightButtonContainer
+    public static final int C_Component_Type_RightButton
+    private static final java.lang.String C_Feature_Layout_Id
+    private static final java.lang.String C_InnerContainer_Id
+    private static final java.lang.String C_Text_Title_Id
+    private static final java.lang.String C_TitleContainer_Id
+    private static final java.lang.String C_Button_Left_Id
+    private static final java.lang.String C_LeftButtonContainer_Id
+    private static final java.lang.String C_Button_Right_Id
+    private static final java.lang.String C_RightButtonContainer_Id
+    185:230:public java.lang.Object getComponent(int)
+com.marsor.common.feature.Feature:
+    57:63:public android.view.View getFeatureComponnet(int)
+    72:81:public android.view.View getFeatureComponnet(java.lang.String)
+com.marsor.common.feature.FeatureType
+com.marsor.common.feature.FlashFeature:
+    public static final java.lang.String C_Str_Type_Param
+    public static final int Type_Beginning_Screen
+    public static final int Type_Ending_Screen
+    public static final int Event_Next_Page
+    public static final int Event_Exit_App
+    105:106:public void setMinDisplayTime(float)
+com.marsor.common.utils.ActivityUtils:
+    24:24:public ActivityUtils()
+    35:43:public static varargs void changeActivity(android.app.Activity,java.lang.Class,int[])
+    56:66:public static varargs void changeActivity(android.app.Activity,java.lang.Class,android.os.Bundle,int[])
+    79:92:public static varargs void changeActivity(android.app.Activity,java.lang.Class,android.os.Bundle,boolean,int[])
+com.marsor.common.utils.AlgorithmicUtils:
+    26:26:public AlgorithmicUtils()
+    35:45:public static long P(int,int)
+    54:62:public static long C(int,int)
+    70:75:public static long factorial(int)
+    82:88:public static java.math.BigInteger factorial(java.math.BigInteger)
+    149:158:public static varargs double getAverage(java.lang.Number[])
+    168:175:public static varargs java.lang.Number getMax(java.lang.Number[])
+    185:192:public static varargs java.lang.Number getMin(java.lang.Number[])
+    202:241:public static boolean arrayContains(java.lang.Object,java.lang.Object)
+com.marsor.common.utils.AndroidUtils:
+    private static final java.lang.String Custom_Toast_Layout_Id
+    private static final java.lang.String Custom_Toast_Content_Id
+    48:48:public AndroidUtils()
+    59:101:public static void Toast(java.lang.String)
+    107:123:private static void formatToastView(android.widget.TextView,boolean)
+    217:226:public static void closeSoftKeyboard(android.view.View)
+    234:241:public static void openSoftKeyboard(android.view.View)
+    248:273:public static varargs void startUpApp(java.lang.String,java.lang.String,android.os.Bundle[])
+com.marsor.common.utils.DataUtils:
+    private static final java.lang.String SELECT_LAST_INSERT_ID
+    46:46:public DataUtils()
+    65:115:private static synchronized android.database.sqlite.SQLiteDatabase getDb()
+    120:123:private static void upgradeDatabase(int,int)
+    127:163:private static void upgradeToVersion(int)
+    174:188:public static boolean checkTableExists(java.lang.String)
+    201:205:public static varargs android.database.Cursor rawQuery(java.lang.String,java.lang.String[])
+    219:228:public static synchronized varargs boolean execSQL(java.lang.String,java.lang.Object[])
+    241:245:public static synchronized long insert(java.lang.String,java.lang.String,android.content.ContentValues)
+    257:273:public static synchronized void insertBatch(java.lang.String,java.lang.String,java.util.List)
+    289:293:public static synchronized varargs long delete(java.lang.String,java.lang.String,java.lang.String[])
+    310:314:public static synchronized varargs int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])
+    326:346:public static varargs java.util.ArrayList getSqlResult(java.lang.String,java.lang.String[])
+    353:359:public static void closeDb()
+    365:367:public static java.lang.String getLastInsertId()
+    371:372:public static synchronized void beginTransaction()
+    375:376:public static synchronized void setTransactionSuccessful()
+    379:380:public static synchronized void endTransaction()
+    395:399:public static void savePreference(java.lang.String,java.lang.Boolean)
+    403:407:public static boolean getPreference(java.lang.String,boolean)
+    412:416:public static void savePreference(java.lang.String,float)
+    420:424:public static float getPreference(java.lang.String,float)
+    429:433:public static void savePreference(java.lang.String,int)
+    437:441:public static int getPreference(java.lang.String,int)
+    463:467:public static void savePreference(java.lang.String,java.lang.String)
+    471:475:public static java.lang.String getPreference(java.lang.String,java.lang.String)
+    487:494:public static void saveSerializable(java.lang.String,java.io.Serializable)
+    508:521:public static java.lang.Object getSerializable(java.lang.String)
+com.marsor.common.utils.ExceptionHandlingUtils
+com.marsor.common.utils.FileUtils:
+    34:34:public FileUtils()
+    42:45:public static java.lang.String getFileContent(java.io.File)
+    76:102:public static boolean copyFile(java.io.InputStream,java.lang.String)
+    111:124:public static boolean copyFile(java.lang.String,java.lang.String)
+    134:167:public static boolean copyFolder(java.lang.String,java.lang.String)
+    178:206:public static varargs void setupFilePermission(java.io.File,java.lang.String,int[])
+    212:218:public static void runCommand(java.lang.String,boolean)
+    227:244:public static void getAllFileNames(java.io.File,java.util.ArrayList)
+    272:279:public static java.lang.String[] getAssetsFileNames(java.lang.String)
+    289:299:public static boolean delFolder(java.lang.String)
+    310:335:public static boolean delAllFile(java.lang.String)
+com.marsor.common.utils.ImageUtils
+com.marsor.common.utils.MediaUtils
+com.marsor.common.utils.ScreenAdapter:
+    141:141:public android.graphics.Point ComputePoint(android.graphics.Point)
+    180:183:public int getScreenOrintation()
+    193:196:public float getWidthByRate(float)
+    205:208:public float getHeightByRate(float)
+    216:219:public float getWidthByRate(int)
+    228:231:public float getHeightByRate(int)
+com.marsor.common.utils.StringUtils
+com.marsor.common.utils.WebHttpUtils:
+    private static final int Connection_Timeout
+    private static final int Socket_TimeOut
+    68:69:private WebHttpUtils()
+    80:140:public static java.lang.String getUrlContent(java.lang.String,java.lang.String)
+    201:247:public static java.lang.String postDataToUrl(java.lang.String,java.util.HashMap)
+    262:391:public static varargs java.lang.String postDataToUrl(java.lang.String,java.util.HashMap,java.util.HashMap[])
+    405:569:public static varargs void downloadFileUrl(java.lang.String,java.lang.String,java.util.HashMap,java.util.HashMap[])
+    580:618:public static boolean downloadWebResource(java.lang.String,java.lang.String)
+    628:664:public static java.lang.String getContentTypeBySufix(java.lang.String)
+    668:678:private static java.net.Socket getCommonSocket(java.lang.String,int)
+com.marsor.common.utils.XmlUtils
+com.marsor.common.utils.ZipUtils
+com.pop.star.BuildConfig
+com.pop.star.DataValues:
+    56:57:public void setLevelScore(int,int)
+com.pop.star.MainGame:
+    73:74:public void setWidth(int)
+    81:82:public void setHeight(int)
+com.pop.star.R
+com.pop.star.R$attr
+com.pop.star.R$drawable
+com.pop.star.R$layout
+com.pop.star.R$string
+com.pop.star.Scene:
+    public static final int BOMB_STAR
+com.pop.star.logic.Star:
+    public abstract void touch()
+com.pop.star.resource.ResourceManager:
+    20:20:public final com.badlogic.gdx.assets.AssetManager getAssetManager()
+    28:28:public final float getProgress()
+    32:32:public final com.badlogic.gdx.graphics.Texture getTexture(java.lang.String)
+    36:36:public final com.badlogic.gdx.graphics.g2d.BitmapFont getBitMapFont(java.lang.String)
+    public abstract void loadResource()
+com.pop.star.resource.SoundManager:
+    7:7:public SoundManager()
+    65:65:public static com.badlogic.gdx.audio.Music getMusic()
